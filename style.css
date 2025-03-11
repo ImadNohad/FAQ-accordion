@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans';
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    background-color: hsl(279, 100%, 97%);
+    padding: 10%;
+}
+
+main {
+    max-width: 1440px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 42.5%;
+}
+
+.title {
+    display: flex;
+}
+
+.title img {
+    width:2.5rem;
+    margin-right: 1.5rem;
+}
+
+.title-text {
+    color: hsl(292, 42%, 14%);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.accordion-item {
+    margin-top: 1.5rem;
+}
+
+.accordion-item-title {
+    color: hsl(292, 42%, 14%);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.accordion-item-title img {
+    width:1.25rem;
+}
+
+.accordion-item-body {
+    font-size: 0.87rem;
+    height: 0;
+    opacity: 0;
+    color:hsl(292, 16%, 49%);
+    overflow: hidden;
+    transition: height 0.5s, opacity 0.5s ease-in-out;
+}
+
+.open {
+    height: 5rem;
+    opacity: 1;
+    transition: height 0.5s, opacity 0.5s ease-in-out;
+}
+
+
+
+
