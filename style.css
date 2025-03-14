@@ -10,22 +10,24 @@ body {
     font-family: 'Work Sans';
     font-size: 1rem;
     background-image: url("assets/images/background-pattern-desktop.svg");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: contain;
     background-color: hsl(279, 100%, 97%);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    margin: 10% 0;
 }
 
 main {
+    margin: auto;
     max-width: 1440px;
     width: 35%;
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
+    box-shadow: 0px 5px 25px -16px hsl(292, 16%, 49%);
 }
 
 .title {
@@ -56,30 +58,38 @@ main {
     font-weight: 600;
 }
 
+.accordion-item-title:hover {
+    cursor: pointer;
+    color: hsl(280.82deg 58.57% 49.22%)
+}
+
 .accordion-item-title img {
     width: 1.5rem;
 }
 
 .accordion-item-body {
     font-size: 0.87rem;
+    /* display: none; */
     height: 0;
-    opacity: 0;
+    visibility: hidden;
     color: hsl(292, 16%, 49%);
-    overflow: hidden;
-    transition: height 0.5s, opacity 0.5s ease-in-out;
+    transition: height 0.5s ease-in-out;
 }
 
 .open {
-    height: 5rem;
-    opacity: 1;
-    transition: height 0.5s, opacity 0.5s ease-in-out;
+    /* display: block; */
+    height: auto;
+    height: calc-size(auto);
+    visibility: visible;
+    transition: height 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 768px) {
     body {
         background-image: url("assets/images/background-pattern-mobile.svg");
+        margin: 40% 0;
     }
-    
+
     main {
         width: 90%;
     }
@@ -96,8 +106,9 @@ main {
 @media only screen and (max-width: 600px) {
     body {
         background-image: url("assets/images/background-pattern-mobile.svg");
+
     }
-    
+
     main {
         width: 90%;
     }
