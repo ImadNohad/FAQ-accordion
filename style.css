@@ -47,6 +47,7 @@ main {
 
 .accordion-item {
     margin-top: 1.5rem;
+    display: grid;
 }
 
 .accordion-item-title {
@@ -68,20 +69,16 @@ main {
 }
 
 .accordion-item-body {
-    font-size: 0.87rem;
-    /* display: none; */
-    height: 0;
-    visibility: hidden;
+    font-size: 0;
+    opacity: 0;
     color: hsl(292, 16%, 49%);
-    transition: height 0.5s ease-in-out;
+    transition: font-size 0.5s, opacity 0.5s;
 }
 
 .open {
-    /* display: block; */
-    height: auto;
-    height: calc-size(auto);
-    visibility: visible;
-    transition: height 0.5s ease-in-out;
+    font-size: 0.87rem;
+    opacity: 1;
+    transition: font-size 0.5s, opacity 0.5s;
 }
 
 @media only screen and (max-width: 768px) {
