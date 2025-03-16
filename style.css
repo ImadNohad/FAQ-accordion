@@ -17,12 +17,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10rem 8.25rem;
+    min-height: 100dvh;
 }
 
 main {
     max-width: 1440px;
-    width: 45%;
+    width: 40%;
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
@@ -90,7 +90,6 @@ main {
 @media only screen and (max-width: 768px) {
     body {
         background-image: url("assets/images/background-pattern-mobile.svg");
-        margin: 40% 0;
     }
 
     main {
@@ -103,16 +102,5 @@ main {
 
     .title img {
         width: 1.5rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-        background-image: url("assets/images/background-pattern-mobile.svg");
-
-    }
-
-    main {
-        width: 90%;
     }
 }
