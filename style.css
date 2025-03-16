@@ -17,13 +17,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10% 0;
+    margin: 7.25rem;
 }
 
 main {
     margin: auto;
     max-width: 1440px;
-    width: 35%;
+    width: 45%;
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
@@ -45,8 +45,12 @@ main {
     font-weight: 700;
 }
 
+.accordion {
+    margin-top: 1.75rem;
+}
+
 .accordion-item {
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
     display: grid;
 }
 
@@ -72,6 +76,7 @@ main {
     font-size: 0;
     opacity: 0;
     color: hsl(292, 16%, 49%);
+    line-height: 1.25rem;
     transition: font-size 0.5s, opacity 0.5s;
 }
 
