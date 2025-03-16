@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -19,7 +19,6 @@ body {
     align-items: center;
     padding: 3rem 0;
     min-height: 100dvh;
-    /* height: -webkit-fill-available; */
 }
 
 main {
@@ -85,7 +84,6 @@ main {
 }
 
 .open {
-    /* font-size: 0.87rem; */
     height: auto;
     visibility: visible;
 }
@@ -93,6 +91,9 @@ main {
 @media only screen and (max-width: 768px) {
     body {
         background-image: url("assets/images/background-pattern-mobile.svg");
+        display: grid;
+        align-content: center;
+        justify-items: center;
     }
 
     main {
