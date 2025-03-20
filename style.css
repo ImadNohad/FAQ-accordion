@@ -96,15 +96,19 @@ main {
         justify-items: center;
     }
 
-    main {
-        width: 90%;
-    }
-
     .title-text {
         font-size: 2rem;
     }
 
     .title img {
         width: 1.5rem;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    main {
+        width: 90%;
     }
 }
